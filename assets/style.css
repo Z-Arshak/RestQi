@@ -1,0 +1,61 @@
+/*https://www.youtube.com/watch?v=US_3XvufMLU*/
+
+h1{
+    color: #0000A0;
+}
+
+header{
+    /*height: 65px;*/
+    height:9vh;
+    background-color:#0000A0;
+
+}
+
+main{
+    text-align: center;
+}
+
+
+body{
+    margin:0;
+    position: relative;
+    padding-bottom: 40px;
+    min-height: 94.5vh;
+}
+
+
+header > ul > li > a{
+    color: #FFFFFF;
+    font-weight: 500;
+    /*font-size: 35px;*/
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+header > ul > li > a:hover{
+    color: #FFDC00;
+}
+
+header > ul{
+    list-style-type: none;
+    float: right;
+}
+
+header > ul li { 
+    display:inline;
+    margin-right: 45px;
+}
+
+footer{
+    /*height: 40px;*/
+    height: 5vh;
+    background-color:#FFC000;
+    text-align:center;
+    color: #0000A0;
+    /*font-size: 15px;*/
+    font-size: 1vw;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Qifex</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <%- include ('partials/header.ejs')%>
+    <main>
+        <h1>Welcome Blog</h1>
+        <p>You wanted to see <%=header%>. Your age is <%=data.age%> and you are <%=data.sex%></p>
+    </main>
+    <h2>Hobbies</h2>
+
+    <ul>
+        <%data.hobbies.forEach(function(items){%>
+        <li><%=items%></li>
+
+        <%});%>
+
+    </ul>
+
+
+    <%- include ('partials/footer.ejs')%>
+
+</body>
+
+</html>
