@@ -44,4 +44,11 @@ app.get(['/blog', '/blog/:name'], function (req, res) {
 
 
 
+//in case the page does not exists. This should be at the end
+app.get('*', function (req, res) {
+    res.render('404');
+});
+
+
+
 app.listen(3000);
