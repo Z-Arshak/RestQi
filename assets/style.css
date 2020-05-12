@@ -10,6 +10,7 @@ header{
     background-color:#0000A0;
     text-align: center;
 
+
 }
 
 main{
@@ -41,7 +42,7 @@ header > ul > li > a:hover{
 header > ul{
     list-style-type: none;
     margin:0;
-    /*float: right;*/    
+    /*float: right;*/   
 }
 
 header > ul li { 

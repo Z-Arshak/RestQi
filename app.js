@@ -1,11 +1,16 @@
 const express = require('express');
+
+//for handling POST requests
+const bodyParser = require('body-parser')
+
 const app = express();
 
-const path = require('path');
-
+//const path = require('path');
 
 app.set('view engine', 'ejs');
 
+// create application/x-www-form-urlencoded parser
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 //for normal html file  with sendFile
 //app.get(['/', '/home', '/index'], (req, res) => res.sendFile(__dirname + '/index.html'));
@@ -30,6 +35,15 @@ app.get('/products', function (req, res) {
 app.get('/contact', function (req, res) {
     res.render('contact')
 });
+
+// POST /login gets urlencoded bodies
+app.post('/contact', urlencodedParser, function (req, res) {
+    //res.send('welcome, ' + req.body.username)
+    console.log(req.body);
+    console.log(req.body.firstName);
+    res.render('contact', { data: req.body });
+});
+
 
 
 //for ejs with render
