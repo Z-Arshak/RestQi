@@ -2,8 +2,8 @@
 
 <head>
     <title>Qifex</title>
-    <link href="/assets/img/favicon.png" rel="shortcut icon" type="image/png">
-    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="./img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="./style.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -15,14 +15,14 @@
     </main>
 
     <form id='contact-form' method='POST' action='/contact'>
-        <label for='yourname'>Please provide your name</label>
-        <input type='text' name='firstName' /><br />
+        <label for='name'>Please provide your name</label>
+        <input type='text' name='firstName' required /><br />
 
         <label for='product'>What you are interested in</label>
-        <input type='text' name='Product' /><br />
+        <input type='text' name='Product' required /><br />
 
         <label for='email'>Your Email</label>
-        <input type='email' name='email' /><br />
+        <input type='email' name='email' required /><br />
 
         <label for='comments'>Additional comments</label>
         <input type='text' name='comments' /><br />
