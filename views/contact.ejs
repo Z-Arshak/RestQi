@@ -11,26 +11,27 @@
     <%- include ('partials/header.ejs')%>
 
     <main>
-        <h1>Welcome Contact</h1>
+        <h1>Contact us and change your life</h1>
+
+
+        <div class='contactForm'>
+            <form id='contact-form' method='POST' action='/contact'>
+                <label for='name'>Please provide your name</label>
+                <input type='text' name='firstName' required />
+
+                <label for='product'>What are you interested in?</label>
+                <input type='text' name='Product' required />
+
+                <label for='email'>Your Email</label>
+                <input type='email' name='email' required />
+
+                <label for='comments'>Additional comments</label>
+                <input type='text' name='comments' />
+                <input id='button' type='submit' value='Submit' />
+            </form>
+        </div>
+
     </main>
-
-    <form id='contact-form' method='POST' action='/contact'>
-        <label for='name'>Please provide your name</label>
-        <input type='text' name='firstName' required /><br />
-
-        <label for='product'>What you are interested in</label>
-        <input type='text' name='Product' required /><br />
-
-        <label for='email'>Your Email</label>
-        <input type='email' name='email' required /><br />
-
-        <label for='comments'>Additional comments</label>
-        <input type='text' name='comments' /><br />
-        <input type='submit' value='Submit' />
-    </form>
-
-
-
 
     <%- include ('partials/footer.ejs')%>
 

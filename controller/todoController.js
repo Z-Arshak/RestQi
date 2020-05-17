@@ -42,15 +42,31 @@ module.exports = function (app) {
 
     app.post('/admin', urlencodedParser, function (req, res) {
         var saveContent = Todo(req.body).save(function (err, data) {
-            if (err) throw err;
+            //if (err) throw err;
+            if (err) return handleError(err);
+            //console.log(req.body);
             res.json(data);
         });
     });
 
 
-
-    app.delete('/admin', function (req, res) {
+    app.delete('/admin/:item', function (req, res) {
+        var deleteItem = req.params.item.replace(/\-/g, " ").trim();
+        console.log(deleteItem);
+        Todo.deleteOne({ item: deleteItem }, function (err, data) {
+            if (err) return handleError(err);
+            // deleted at most one tank document
+            res.json(data)
+        });
 
     });
+
+    // app.delete('/admin/:item', function (req, res) {
+    //     Todo.find({ item: req.params.item.replace(/\-/g, " ") }).remove(function (err, data) {
+    //         if (err) throw err;
+    //         res.json(data);
+    //     });
+
+    // });
 
 };

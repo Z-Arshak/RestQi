@@ -1,5 +1,10 @@
 /*https://www.youtube.com/watch?v=US_3XvufMLU*/
 
+
+*{
+    font-family: Segoe UI Light, Calibre, Arial, sans-serif;
+}
+
 h1{
     color: #0000A0;
 }
@@ -9,6 +14,7 @@ header{
     height:9vh;
     background-color:#0000A0;
     text-align: center;
+    padding-top: 4vh;
 
 
 }
@@ -61,6 +67,7 @@ footer{
     position:absolute;
     bottom: 0;
     width: 100%;
+    padding-bottom: 2vh;;
 
 }
 
@@ -72,4 +79,98 @@ body.error{
 h1.error{
     font-size: 8vw;
     text-align:center;
+}
+
+
+.ourProducts{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ourProducts h1{
+    text-align: center;
+    color: #0000A0;
+    font-size: 2.5vw;
+}
+
+.ourProducts img{
+    height: 30vh;
+    width: 30vh;
+}
+
+.ourProducts div{
+    display: flex;
+}
+
+.ourProducts figcaption{
+    text-align: center;
+    color: #0000A0;
+    font-size: 1.5vw;
+}
+
+.headSectionProd{
+    background: url(./img/product/header.jpg);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0px;
+}
+
+.headSectionProd img{
+    height: 50vh;
+}
+
+.headSectionProd h1{
+    color:#FFFFFF;
+    font-size:3vw;
+    margin: 0px;
+    padding-top: 15vh;
+}
+
+.contactForm{
+    /* background: #; */
+    width: 60vh;
+    height:60vh;
+    border: 1px solid #0000A0;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+
+.contactForm label, input{
+    display:block;
+}
+
+.contactForm input{
+    margin: auto;
+    margin-top:0;
+    padding-top: 0;
+    margin-bottom: 3vh;
+    height: 4vh;
+    width: 50vh;
+}
+
+#button{
+    height: 6vh;
+    width: 20vh;
+    background-color:#0000A0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-weight: 500;
+    border: none;
+}
+
+#button:hover {
+    background-color: #04c4aa;
+}
+
+
+.contactForm label{
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 0.5vh;
+    padding-bottom: 0;
+    color: #0000A0;
+    font-weight: 600;
 }
